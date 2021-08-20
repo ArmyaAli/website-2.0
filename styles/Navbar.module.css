@@ -1,0 +1,45 @@
+.navTitle {
+    width: 100%;
+    font-size: 64px;
+}
+
+@media only screen and (max-width: 480px) {
+    .navTitle {
+        text-align: center;
+        font-size: 64px;
+        animation: rotateY 15s infinite;
+    }
+    .navSubtitle {
+        text-align: center;
+        font-size: 32px;
+        animation: rotateY 15s infinite;
+    }
+    .navLinks {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navLinkItem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4px;
+        width: 45%;
+        height: 48px;
+        background-color: #3bc544;
+    }
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@keyframes rotateY {
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform: rotateY(359deg);
+    }
+}
