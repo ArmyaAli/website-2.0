@@ -1,0 +1,17 @@
+.profileContainer {
+    height: 320px;
+    width: 256px;
+    border-radius: 50%;
+}
+
+.profileImage {
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .profileContainer {
+        height: 480px;
+        width: 320px;
+        border-radius: 50%;
+    }
+}
