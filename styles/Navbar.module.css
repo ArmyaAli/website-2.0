@@ -1,25 +1,21 @@
-.navTitle {
-    width: 100%;
-    font-size: 64px;
-}
-
-@media only screen and (max-width: 480px) {
     .navTitle {
         text-align: center;
         font-size: 64px;
         animation: rotateY 15s infinite;
     }
+    
     .navSubtitle {
         text-align: center;
         font-size: 32px;
-        animation: rotateY 15s infinite;
     }
+    
     .navLinks {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+    
     .navLinkItem {
         display: flex;
         justify-content: center;
@@ -28,18 +24,40 @@
         width: 45%;
         height: 48px;
         background-color: #3bc544;
+        cursor: pointer;
+        border-radius: 4px;
     }
-}
-
-@media only screen and (max-width: 800px) {}
-
-@media only screen and (min-width: 1200px) {}
-
-@keyframes rotateY {
-    from {
-        transform: rotateY(0deg)
+    
+    .navLinkItem:hover {
+        box-shadow: 10px 5px 5px rgb(7, 63, 7);
     }
-    to {
-        transform: rotateY(359deg);
+    
+    @media only screen and (min-width: 1024px) {
+        .titleContainer {
+            width: 350px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .navSubtitle {
+            font-size: 28px;
+        }
+        .navLinks {
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+        }
+        .navLinkItem {
+            width: 144px;
+        }
     }
-}
+    
+    @media only screen and (min-width: 1300px) {}
+    
+    @keyframes rotateY {
+        from {
+            transform: rotateY(0deg)
+        }
+        to {
+            transform: rotateY(359deg);
+        }
+    }
