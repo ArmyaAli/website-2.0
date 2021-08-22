@@ -1,0 +1,42 @@
+.interestsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px auto;
+}
+
+.imageContainer {
+    width: 320px;
+    height: 320px;
+}
+
+.textContainer {
+    text-align: center;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1200px) {
+    .interestsContainer {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        height: 100vh;
+    }
+    .imageContainer {
+        width: 800px;
+        height: 400px;
+    }
+    .textContainer {
+        text-align: left;
+    }
+    .heading {
+        font-size: 72px;
+    }
+    .text {
+        font-size: 18px;
+    }
+}
