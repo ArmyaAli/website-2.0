@@ -1,26 +1,38 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import React from 'react'
 import styles from '../styles/Navbar.module.css'
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
         <nav>
-            <span className={styles.navTitle}>Ali Umar</span>
-            <span className={styles.navSubtitle}>Software Developer</span>
+            <div className={styles.titleContainer}>
+                <div className={styles.navTitle}>Ali Umar</div>
+                <div className={styles.navSubtitle}>Software Developer</div>
+            </div>
             <ul className={styles.navLinks}>
-                <li className={styles.navLinkItem}>
-                    About
-                </li>
-                <li className={styles.navLinkItem}>
-                    Skillset
-                </li>
-                <li className={styles.navLinkItem}>
-                    Projects
-                </li>
-                <li className={styles.navLinkItem}>
-                    Interests
-                </li>
+                <Link href="#profile">
+                    <li className={styles.navLinkItem}>
+                        About Us
+                    </li>
+                </Link>
+                <Link href="#interests">
+                    <li className={styles.navLinkItem}>
+                        Interests
+                    </li>
+                </Link>
+                <Link href="#skills">
+                    <li className={styles.navLinkItem}>
+                        Skillset
+                    </li>
+                </Link>
+                <Link href="#projects">
+                    <li className={styles.navLinkItem}>
+                        Projects
+                    </li>
+                </Link>
                 <li className={styles.navLinkItem}>
                     Notes/Bookmarks
                 </li>
