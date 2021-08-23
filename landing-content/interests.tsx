@@ -7,7 +7,7 @@ const Interests = () => {
     return (
         <div id="interests" className={styles.interestsContainer}>
             <div className={styles.imageContainer}>
-                <Image className={styles.demoImage} src="mushroom_fighter_demo.gif" alt="Demo gif of mushroom fighter using SFML lib" />
+                <img className={styles.demoImage} src="mushroom_fighter_demo.gif" alt="Demo gif of mushroom fighter using SFML lib" />
             </div>
             <div className={styles.textContainer}>
                 <div className={styles.heading}>Interests</div>
