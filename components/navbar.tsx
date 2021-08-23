@@ -24,6 +24,11 @@ const Navbar = () => {
                             Home
                         </li>
                     </Link>
+                    <Link href="/resume">
+                        <li className={styles.navLinkItem}>
+                            Resume
+                        </li>
+                    </Link>
                     <Link href="/notes">
                         <li className={styles.navLinkItem}>
                             Notes/Bookmarks
@@ -34,17 +39,24 @@ const Navbar = () => {
         )
     }
 
-    if (router.pathname === "/notes") {
+    if (router.pathname === "/resume") {
         return (
             <nav>
-                <div className={styles.titleContainer}>
-                    <div className={styles.navTitle}>Ali Umar</div>
-                    <div className={styles.navSubtitle}>Software Developer</div>
-                </div>
+                <Link href="/">
+                    <div className={styles.titleContainer}>
+                        <div className={styles.navTitle}>Ali Umar</div>
+                        <div className={styles.navSubtitle}>Software Developer</div>
+                    </div>
+                </Link>
                 <ul className={styles.navLinks}>
                     <Link href="/">
                         <li className={styles.navLinkItem}>
                             Home
+                        </li>
+                    </Link>
+                    <Link href="/notes">
+                        <li className={styles.navLinkItem}>
+                            Notes/Bookmarks
                         </li>
                     </Link>
                     <Link href="/contact">
@@ -57,12 +69,43 @@ const Navbar = () => {
         )
     }
 
+    if (router.pathname === "/notes") {
+        return (
+            <nav>
+                <Link href="/">
+                    <div className={styles.titleContainer}>
+                        <div className={styles.navTitle}>Ali Umar</div>
+                        <div className={styles.navSubtitle}>Software Developer</div>
+                    </div>
+                </Link>
+                <ul className={styles.navLinks}>
+                    <Link href="/">
+                        <li className={styles.navLinkItem}>
+                            Home
+                        </li>
+                    </Link>
+                    <Link href="/resume">
+                        <li className={styles.navLinkItem}>
+                            Resume
+                        </li>
+                    </Link>
+                    <Link href="/contact">
+                        <li className={styles.navLinkItem}>
+                            Contact
+                        </li>
+                    </Link>
+                </ul>
+            </nav >
+        )
+    }
     return (
         <nav>
-            <div className={styles.titleContainer}>
-                <div className={styles.navTitle}>Ali Umar</div>
-                <div className={styles.navSubtitle}>Software Developer</div>
-            </div>
+            <Link href="/">
+                <div className={styles.titleContainer}>
+                    <div className={styles.navTitle}>Ali Umar</div>
+                    <div className={styles.navSubtitle}>Software Developer</div>
+                </div>
+            </Link>
             <ul className={styles.navLinks}>
                 <Link href="#profile">
                     <li className={styles.navLinkItem}>
