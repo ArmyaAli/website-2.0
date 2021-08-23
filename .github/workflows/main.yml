@@ -13,7 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Build site & Next export as a static site
+        # get the repo
+      - name: Checkout
+        uses: actions/checkout@v2
+        # npm i
+      - name: Install Dependencies
+        run: npm ci
+        # deploy to out/
+      - name: Deploy
         run: npm run deploy
 
       - name: GitHub Pages
@@ -28,4 +35,5 @@ jobs:
           commit_message: Deploy site
           jekyll: false
           CLEAN: true
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
