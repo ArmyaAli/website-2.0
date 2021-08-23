@@ -12,6 +12,10 @@ import Skills from '../landing-content/skills'
 const Home: NextPage = () => {
   return (
     <div>
+      <Head>
+        <title>Ali's Website</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar></Navbar>
       <Intro></Intro>
       <Interests></Interests>
