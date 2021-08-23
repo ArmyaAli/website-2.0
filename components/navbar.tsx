@@ -4,8 +4,57 @@ import Image from 'next/image'
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/dist/client/router'
 
 const Navbar = () => {
+    const router = useRouter()
+
+    if (router.pathname === "/contact") {
+        return (
+            <nav>
+                <div className={styles.titleContainer}>
+                    <div className={styles.navTitle}>Ali Umar</div>
+                    <div className={styles.navSubtitle}>Software Developer</div>
+                </div>
+                <ul className={styles.navLinks}>
+                    <Link href="/">
+                        <li className={styles.navLinkItem}>
+                            Home
+                        </li>
+                    </Link>
+                    <Link href="/notes">
+                        <li className={styles.navLinkItem}>
+                            Notes/Bookmarks
+                        </li>
+                    </Link>
+                </ul>
+            </nav >
+        )
+    }
+
+    if (router.pathname === "/notes") {
+        return (
+            <nav>
+                <div className={styles.titleContainer}>
+                    <div className={styles.navTitle}>Ali Umar</div>
+                    <div className={styles.navSubtitle}>Software Developer</div>
+                </div>
+                <ul className={styles.navLinks}>
+                    <Link href="/">
+                        <li className={styles.navLinkItem}>
+                            Home
+                        </li>
+                    </Link>
+                    <Link href="/contact">
+                        <li className={styles.navLinkItem}>
+                            Contact
+                        </li>
+                    </Link>
+                </ul>
+            </nav >
+        )
+    }
+
     return (
         <nav>
             <div className={styles.titleContainer}>
@@ -33,12 +82,16 @@ const Navbar = () => {
                         Projects
                     </li>
                 </Link>
-                <li className={styles.navLinkItem}>
-                    Notes/Bookmarks
-                </li>
-                <li className={styles.navLinkItem}>
-                    Contact
-                </li>
+                <Link href="/notes">
+                    <li className={styles.navLinkItem}>
+                        Notes/Bookmarks
+                    </li>
+                </Link>
+                <Link href="/contact">
+                    <li className={styles.navLinkItem}>
+                        Contact
+                    </li>
+                </Link>
             </ul>
         </nav>
     )
