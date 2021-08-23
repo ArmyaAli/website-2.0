@@ -34,6 +34,5 @@ jobs:
           author: Ali Umar
           commit_message: Deploy site
           jekyll: false
-          CLEAN: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
