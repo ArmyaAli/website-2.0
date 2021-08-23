@@ -12,10 +12,12 @@ const Navbar = () => {
     if (router.pathname === "/contact") {
         return (
             <nav>
-                <div className={styles.titleContainer}>
-                    <div className={styles.navTitle}>Ali Umar</div>
-                    <div className={styles.navSubtitle}>Software Developer</div>
-                </div>
+                <Link href="/">
+                    <div className={styles.titleContainer}>
+                        <div className={styles.navTitle}>Ali Umar</div>
+                        <div className={styles.navSubtitle}>Software Developer</div>
+                    </div>
+                </Link>
                 <ul className={styles.navLinks}>
                     <Link href="/">
                         <li className={styles.navLinkItem}>
