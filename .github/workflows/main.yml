@@ -1,0 +1,29 @@
+name: Prod
+
+on:
+  push:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Build site & Next export as a static site
+        run: npm run deploy
+
+      - name: GitHub Pages
+        # You may pin to the exact commit or the version.
+        # uses: crazy-max/ghaction-github-pages@db4476a01402e1a7ce05f41832040eef16d14925
+        uses: crazy-max/ghaction-github-pages@v2.5.0
+        with:
+          target_branch: prod
+          build_dir: out
+          committer: Ali Umar
+          author: Ali Umar
+          commit_message: Deploy site
+          jekyll: false
