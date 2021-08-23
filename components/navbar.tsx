@@ -15,7 +15,7 @@ const Navbar = () => {
             <ul className={styles.navLinks}>
                 <Link href="#profile">
                     <li className={styles.navLinkItem}>
-                        About Us
+                        About
                     </li>
                 </Link>
                 <Link href="#interests">
@@ -25,7 +25,7 @@ const Navbar = () => {
                 </Link>
                 <Link href="#skills">
                     <li className={styles.navLinkItem}>
-                        Skillset
+                        Skills
                     </li>
                 </Link>
                 <Link href="#projects">
