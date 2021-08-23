@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 16px auto;
 }
 
 .heading {
@@ -22,6 +23,7 @@
 .projectHeading {
     text-align: center;
     font-weight: bold;
+    margin: 8px 0;
 }
 
 .projectDesc {
