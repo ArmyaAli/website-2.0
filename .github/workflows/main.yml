@@ -27,3 +27,5 @@ jobs:
           author: Ali Umar
           commit_message: Deploy site
           jekyll: false
+          CLEAN: true
+
