@@ -1,0 +1,22 @@
+.resumeContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.resumePageOne {
+    margin: 8px;
+}
+
+.resumePageTwo {
+    margin: 8px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .resumeContainer {
+        flex-direction: row;
+    }
+}
