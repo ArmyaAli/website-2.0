@@ -14,10 +14,11 @@
 
 .projectsEntryContainer {
     width: 100%;
+    padding: 16px;
 }
 
 .projectSection {
-    margin: 4px;
+    margin: 32px 0;
 }
 
 .projectHeading {
@@ -41,10 +42,13 @@
     .heading {
         font-size: 72px;
     }
+    .projectHeading {
+        font-size: 24px;
+    }
     .projectsEntryContainer {
         width: 50%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: 32px;
     }
 }
