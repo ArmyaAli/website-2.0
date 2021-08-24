@@ -1,0 +1,51 @@
+.noteContainer {
+    width: 90%;
+    max-width: 400px;
+    padding: 16px;
+    margin: 16px auto;
+    background-color: rgb(25, 192, 25);
+    border-radius: 8px;
+    color: white;
+    overflow: auto;
+}
+
+.noteContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.noteTitle {
+    text-align: center;
+    font-size: 32px;
+}
+
+.noteBody {
+    margin: 4px 0;
+}
+
+.noteLink {
+    color: red;
+    animation: flashing 1s infinite;
+    font-size: 32px;
+    text-align: center;
+}
+
+@keyframes flashing {
+    from {
+        color: red;
+    }
+    to {
+        color: green;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .noteContainer {
+        width: 400px;
+        max-height: 256px;
+        padding: 16px;
+        margin: 16px auto;
+        background-color: rgb(25, 192, 25);
+        border-radius: 8px;
+        color: white;
+    }
+}
