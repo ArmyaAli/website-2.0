@@ -8,7 +8,7 @@ const PROJECTS = [
         desc: "This got me banned off the Canadian BestBuy website temporarily. It uses a tool called puppeteer to automate a chrome browser instance. Utilizing automation you are able to check if a product is in stock. You can feed it a text file containing product links and it'll get to work. I was attempting to use it to scalp RTX 3080 cards."
     },
     {
-        title: "Shopping Solution - Windows Forms",
+        title: "Custom Shopping Application",
         desc: "This was the final project of a course I took at Seneca College in my last semester. It is a boring old Client/Server application that utilizes a variety of features C# and .NET have to offer. Asynchronous programming, multi-threading, .NET sockets APIs. It is named Ali's Tea Shop and it was quite fun to build out. I also got a good mark!"
     },
     {
