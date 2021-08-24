@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: black;
+    align-items: center;
 }
 
 .resumePageOne {
@@ -15,8 +16,30 @@
     margin: 8px;
 }
 
+.downloadButton {
+    width: 256px;
+    height: 72px;
+    border-radius: 8px;
+    background-color: rgb(32, 87, 15);
+    cursor: pointer;
+    border: none;
+    font-size: 32px;
+    font-weight: bold;
+    color: orange;
+    margin: 16px 0;
+}
+
+.downloadButton:hover {
+    color: white;
+    background-color: rgb(86, 117, 76);
+}
+
 @media only screen and (min-width: 1200px) {
     .resumeContainer {
         flex-direction: row;
+    }
+    .downloadButton {
+        width: 320px;
+        height: 72px;
     }
 }

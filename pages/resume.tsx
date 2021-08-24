@@ -20,7 +20,9 @@ const Resume: NextPage = () => {
           <img src="page2.jpg" alt="Page 1 of my resume" />
         </div>
         <div>
-
+        <div>
+          <button className={styles.downloadButton}><a href="resume.pdf" download>Download PDF</a></button>
+        </div>
         </div>
       </div>
       <Footer></Footer>
