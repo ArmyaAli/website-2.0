@@ -14,7 +14,7 @@ const Notes: NextPage = () => {
       <Navbar></Navbar>
       <div className={styles.notesContainer}>
         {
-          NOTES.map((note) => <Note title={note.title} body={note.body} link={note.link} />)
+          NOTES.map((note, index) => <Note key={index} title={note.title} body={note.body} link={note.link} />)
         }
       </div>
       <Footer></Footer>
