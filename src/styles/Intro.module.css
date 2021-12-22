@@ -19,9 +19,17 @@
 
 .profileDesc {}
 
+.subText {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .resumeButtonContainer {
     width: 100%;
     height: 48px;
+    margin: 8px 0;
     cursor: pointer;
     border-radius: 4px;
 }
