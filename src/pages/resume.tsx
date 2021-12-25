@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import React, { useState } from "react";
+import React from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import styles from '../styles/Resume.module.css'

@@ -1,8 +1,5 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Headshot from '../components/headshot'
 import styles from '../styles/Intro.module.css'
 import useScreenSize from '../hooks/useScreenSize';
