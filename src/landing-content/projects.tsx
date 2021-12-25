@@ -10,9 +10,9 @@ const Projects = () => {
             <div className={styles.heading}>Projects</div>
             <div className={styles.projectsEntryContainer}>
                 {
-                    PROJECTS.map((project) => {
+                    PROJECTS.map((project, index) => {
                         return (
-                            <div className={styles.projectSection}>
+                            <div key={index} className={styles.projectSection}>
                                 <div className={styles.projectHeading}>{project.title}</div>
                                 <div className={styles.projectDesc}>{project.desc}</div>
                             </div>
