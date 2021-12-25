@@ -5,20 +5,15 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import Headshot from '../components/headshot'
 import styles from '../styles/Intro.module.css'
+import useScreenSize from '../hooks/useScreenSize';
 import Game from './game'
 
 const Intro = () => {
     const [playing, setPlaying] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(0)
+    const size = useScreenSize();
+   
 
-    useEffect(() => {
-        setWindowWidth(window.innerWidth);
-        window.addEventListener('resize', e => {
-            setWindowWidth(window.innerWidth);
-        });
-    }, []);
-
-    if (playing && windowWidth >= 1200)
+    if (playing && size.width >= 1200)
         return (
             <div>
                 <div className={styles.resumeButtonContainer} onClick={() => setPlaying(false)}>
@@ -28,7 +23,7 @@ const Intro = () => {
             </div>
         )
 
-    if (windowWidth < 1200)
+    if (size.width < 1200)
         return (
             <div id="profile" className={styles.profileContainer}>
                 <Headshot></Headshot>
